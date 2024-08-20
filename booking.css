@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: black; /* Base color for the section */
+    background-image: 
+        url(pics/noise.svg); /* Your SVG noise texture */
+    background-size: cover; /* Adjust as needed */
+    background-blend-mode:luminosity; /* Blend the SVG with the color */
+}
+:root {
+    --primary-color: #fff;
+    --secondary-color: #D3D3D3;
+    --background-color: #000000;
+    --heading-size: 1.5rem;
+    --span-color: #d8d4a6;
+}
+
+.navbar {
+    top: 0; /* Aligns the navbar to the top of the viewport */
+    left: 0; /* Aligns the navbar to the left of the viewport */
+    width: 100%; /* Makes the navbar span the entire width of the viewport */
+    position: absolute; /* Keeps the navbar positioned relative to the viewport */
+    z-index: 10; /* Ensures it stays on top of other content */
+    display: flex; /* Allows children to align horizontally */
+    background-color: rgba(36, 36, 36, 0.288); /* Optional: background color for visibility */
+    padding: 12px; /* Optional: Adds padding for spacing */
+}
+
+.navelements{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    background-color: transparent;
+    max-width: 100vw;
+}
+.navelement:nth-child(1){
+    margin-left: 5%;/* Adjust spacing between elements as needed */
+}
+.navelement{
+    max-width: 100vw;
+}
+.phone{
+    height: 27px;
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.navelements a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+#sidebar{
+    display: none;
+}
+#sidebar.show{
+    display: flex;
+    transform: translate(0);
+}
+.menu-icon {
+    display: none;
+}
+
+
+@media (max-width: 430px) {
+    .navelements{
+        display: none;
+    }
+    #sidebar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.733); /* Background color for the sidebar */
+        position: fixed; 
+        z-index: 4;
+        transition: transform 0.3s ease, display 0s 0.3s; 
+        transform: translateX(-100%);
+    }
+    #sidebar.show{
+        display: flex;
+        transform: translate(0);
+    }
+    .sidebar-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .sidebar-items a{
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 1.2rem;
+    }
+    .navbar{
+        background-color: transparent;
+    }
+    .menu-icon {
+        margin-left: auto;
+        display: flex;
+    }
+    .menu{
+        height: 45px;
+    }
+}

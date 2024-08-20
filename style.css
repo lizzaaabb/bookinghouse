@@ -8,6 +8,9 @@
 body{
     background-color: #000000;
 }
+[data-aos] {
+    overflow: hidden; /* Prevents any unwanted scrollbars */
+}
 :root {
     --primary-color: #fff;
     --secondary-color: #D3D3D3;
@@ -657,14 +660,17 @@ footer{
 
     .footer2 {
         order: 1; /* Move footer2 to the first position */
+        
     }
 
     .footer3 {
         order: 2; /* Move footer3 to the second position */
+        margin-top: 20px;
     }
 
     .footer4 {
         order: 3; /* Move footer4 to the third position */
+        margin-top: 20px;
     }
 
     
