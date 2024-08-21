@@ -9,15 +9,16 @@ menu.onclick = function(){
 }
 
 
+console.log("Initializing flatpickr for #checkIn and #checkOut");
 flatpickr("#checkIn", {
     dateFormat: "Y-m-d",
-    minDate: "today" // Prevent selection of past dates
+    minDate: "today"
 });
-
 flatpickr("#checkOut", {
     dateFormat: "Y-m-d",
-    minDate: "today" // Prevent selection of past dates
+    minDate: "today"
 });
+
 
 // Initialize EmailJS with your public key
 emailjs.init("yS2bsPWQQnpxgtMBL");
