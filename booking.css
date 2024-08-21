@@ -12,6 +12,9 @@ body{
     background-size: cover; /* Adjust as needed */
     background-blend-mode:luminosity; /* Blend the SVG with the color */
     box-sizing: border-box;
+    width: 100%;
+    height: 100dvh;
+    position: relative;
 }
 :root {
     --primary-color: #fff;
@@ -266,6 +269,7 @@ form{
     margin-top: 110px;
     width: 100%;
     overflow-x: hidden;
+    margin-bottom: 250px;
 }
 .main-right{
     width: 100%;
@@ -302,6 +306,119 @@ form{
     text-decoration: none;
     color: var(--span-color);
 }
+
+
+footer{
+    background-color: black; /* Base color for the section */
+    background-image: 
+        url(pics/noise.svg); /* Your SVG noise texture */
+    background-size: cover; /* Adjust as needed */
+    background-blend-mode:luminosity;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--secondary-color);
+    position: relative;
+    gap: 110px;
+    width: 100%;
+    margin-left: 60px;
+}
+.footer2{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer3{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer4{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+.footer1{
+    width: 300px;
+}
+.footer1 span{
+    font-size: 0.85rem;
+}
+.footer3 span{
+    color: var(--span-color);
+    font-size: 0.9rem;
+    margin-bottom: 9px;
+}
+.footer2 span{
+    color: var(--span-color);
+    font-size: 0.9rem;
+    margin-bottom: 9px;
+
+}
+.footer3 a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+}
+.footer2 a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+
+}
+.footer1{
+    margin-bottom: -140px;
+
+}
+
+.spanheading{
+    color: var(--span-color);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+.spandescription{
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+.inputcontainer input{
+    padding: 15px 10px;
+    border-radius: 1rem;
+    width: 270px;
+    margin-top: 10px;
+    border: 0.8px solid var(--secondary-color);
+    background: transparent;
+    color: #fff;
+
+}
+.inputbtn{
+    padding: 15px 10px;
+    border-radius: 1rem;
+    color: #fff;
+    background: transparent;
+    width: 80px;
+    border: 0.8px solid var(--secondary-color) ;
+    font-family: 'BOOWIE', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.inputcontainer input:focus {
+    outline: none; /* Removes the default focus outline */
+    border: 0.8px solid var(--secondary-color); /* Keeps the border the same as the non-focused state */
+}
+
 
 
 @media (max-width: 430px) {
@@ -453,6 +570,67 @@ form{
     .checkinout {
         overflow: visible; /* Ensure overflow is not cutting off the placeholders */
     }
+
+    .footer-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 10px; /* Adjust gap for smaller screens */
+        align-items: flex-start; /* Align items to the left */
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer1, .footer2, .footer3, .footer4 {
+        width: 100%; /* Full width for responsiveness */
+        text-align: left; /* Ensure text is left-aligned */
+    }
+
+    .footer2 a, .footer3 a {
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
+    }
+
+    .spanheading, .spandescription {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .inputcontainer input, .inputbtn {
+        width: 80%; /* Full width for input and button */
+        padding: 10px 15px;
+    }
+
+    .inputbtn {
+        max-width: 40%; /* Allow button to expand fully */
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    .footer1 {
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer1 span{
+        font-size: 0.8rem;
+    }
+
+    .footer1 {
+        order: 4; /* Move footer1 to the last position */
+    }
+
+    .footer2 {
+        order: 1; /* Move footer2 to the first position */
+        
+    }
+
+    .footer3 {
+        order: 2; /* Move footer3 to the second position */
+        margin-top: 20px;
+    }
+
+    .footer4 {
+        order: 3; /* Move footer4 to the third position */
+        margin-top: 20px;
+    }
+
     
 }
 
