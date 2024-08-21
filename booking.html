@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/boowie" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -36,6 +37,72 @@
             <a href="#" class="item">Contact</a>
         </div>
     </div>
+
+
+
+    <div class="main">
+        <div class="main-section">
+            <div class="formtitle">
+                <h1>RESERVATION</h1>
+                <span class="span1">FOR GENERAL ENQUIRIES PLEASE GET IN TOUCH</span>
+            </div>
+            <form id="form1">
+                <div class="check">
+                    <div class="checkinout">
+    
+                       <input type="text" id="checkIn" name="checkIn" placeholder="Check-In" required>
+    
+                       <input type="text" id="checkOut" name="checkOut" placeholder="Check-Out" required>
+                    </div>
+    
+                    <div class="guests">
+    
+                        <select id="guests" name="guests" required>
+                            <option value="" disabled selected>Guest Count</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="More">More</option>
+                        </select>
+    
+                    </div>
+                </div>
+                <div class="texts">
+                    <div class="emails">
+                        <input type="text" id="name" name="fullName" placeholder="Full Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="text" id="number" name="number" placeholder="Phone Number" required>
+    
+                    </div>
+                </div>
+                <div class="formbtn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+    
+    
+        </div>
+        <div class="main-right">
+            <img src="pics/circle.png" class="circle">
+            <p class="names">Elizabeth & Catherine</p>
+            <p class="phones">+123 574 09 89 43</p>
+            <a href="#" class="mailaddress">masdumoulin@gmail.com</a>
+            <p class="address">Provence, France 0159</p>
+            <a href="#" class="maps">SEE ON GOOGLE MAPS</a>
+            <a href="#" class="maps">CHECK AVAILABILITY</a>
+            <a href="#" class="maps">CHECK PRICING</a>
+            <img src="pics/facebook-logo-in-circular-shape.png" class="facebook">
+
+
+        </div>
+    </div>
+    
+
+
+    
     
 
 
@@ -43,6 +110,15 @@
 
 
 
-    
+     <!-- AOS JS (must be loaded first) -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     <!-- EmailJS JS -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+ 
+     <!-- Your custom JS -->
+     <script src="app2.js"></script>
 </body>
 </html>
