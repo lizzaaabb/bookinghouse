@@ -445,8 +445,34 @@ form{
         margin-top: 90px;
         padding-bottom: 20px;
     }
+    input[type="text"] {
+        font-size: 14px; /* Smaller font size for smaller screens */
+        padding: 8px;
+        color: var(--secondary-color);
+    }
+    .checkinout {
+        overflow: visible; /* Ensure overflow is not cutting off the placeholders */
+    }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1024px) {
