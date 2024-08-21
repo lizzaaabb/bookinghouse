@@ -630,6 +630,18 @@ footer{
         margin-top: 20px;
     }
 
+    input::placeholder {
+        color: #b3b3b3; /* Light grey color for visibility */
+        opacity: 1; /* Ensures full visibility of the placeholder text */
+        font-family: 'BOOWIE', sans-serif; /* Consistent font styling */
+        font-size: 12px; /* Adjust size for clarity */
+    }
+    
+    /* For focus state, keep placeholder styling consistent */
+    input:focus::placeholder {
+        color: #b3b3b3; /* Same color as non-focused state */
+    }
+    
     
 }
 

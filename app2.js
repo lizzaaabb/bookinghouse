@@ -87,23 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('form1');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Show a success notification using Noty
-        new Noty({
-            text: 'Booking submitted successfully!',
-            type: 'success',
-            layout: 'topRight', // You can change the layout if needed
-            timeout: 3000 // Notification will be visible for 3 seconds
-        }).show();
-
-        // Optionally, you can clear the form fields after submission
-        form.reset();
-    });
-});
 
 
